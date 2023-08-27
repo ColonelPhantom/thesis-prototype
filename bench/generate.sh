@@ -20,6 +20,3 @@ for i in $(seq 8 20);
     echo "Generating factories $i"
     runghc prism/HsFactories.hs $i < factory-weights.txt > tmp/factories-$i.prism
 done
-
-# sudo swapoff -a
-balooctl suspend

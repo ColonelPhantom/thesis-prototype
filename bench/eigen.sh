@@ -5,7 +5,7 @@ TRANS=(snakes_ladders.txt snakes_snakes.txt)
 HORIZON=(10 20 50 100 200)
 
 OUTPUT=results/eigen-$(date +%F+%T)
-mkdir -p results
+mkdir -p results tmp
 mkdir $OUTPUT
 lscpu > $OUTPUT/lscpu
 
