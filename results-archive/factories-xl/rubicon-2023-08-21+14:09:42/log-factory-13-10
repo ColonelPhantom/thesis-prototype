@@ -1,0 +1,7 @@
+================[ Joint Distribution ]================
+Value	Probability	
+(true, true)	0.	
+(true, false)	1.60100036086e-05	
+(false, true)	0.	
+(false, false)	0.999983989996	
+

@@ -1,0 +1,31 @@
+Storm 1.8.0
+
+Date: Sun Aug 27 20:06:40 2023
+Command line arguments: --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F<=160 finished ]' --timemem -e sparse -v
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 4.370s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1402622
+Transitions: 	8131029
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((p0 = 100) | (p1 = 100)) | (p2 = 100)) -> 17787 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=160 (((p0 = 100) | (p1 = 100)) | (p2 = 100))] ...
+ INFO (SparseDeterministicStepBoundedHorizonHelper.cpp:51): Preprocessing: 1384835 non-target states with probability greater 0.
+Result (for initial states): 0.9906715409
+Time for model checking: 7.684s.
+
+Performance statistics:
+  * peak memory usage: 652MB
+  * CPU time: 11.999s
+  * wallclock time: 12.060s

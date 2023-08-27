@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max,parameter_h,parameter_p,parameter_t
+timeout 30m /bin/time storm --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F<=80 finished ]' --timemem -e hybrid -v > /data/results/storm-2023-08-23+19:22:59/log-fixed-snakes_ladders.txt-3-80,4.637519033993333,0.002362480834971429,4.63643744966,71.48249491333333,2.03146502,4.63589096766,4.64022868466,80,3,snakes_ladders.txt

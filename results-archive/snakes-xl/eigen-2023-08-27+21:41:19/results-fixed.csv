@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max,parameter_h,parameter_p,parameter_t
+timeout 30m /bin/time tmp/solver-4 snakes-fixed 100 snakes_ladders.txt 80 &> results/eigen-2023-08-27+21:41:19/log-fixed-snakes_ladders.txt-4-80,109.94523433556667,0.7027244439476177,110.3405551719,104.43242841333331,5.409212893333333,109.1338861129,110.3612617219,80,4,snakes_ladders.txt

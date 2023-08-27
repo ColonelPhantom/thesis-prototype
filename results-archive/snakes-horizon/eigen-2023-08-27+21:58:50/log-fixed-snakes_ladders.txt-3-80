@@ -1,0 +1,10 @@
+Game has 81 valid squares
+Initialized snakes and ladders with 3 players
+................................................................................Done after 1210.027344ms
+Final probabilities:
+26.56801418%: Won by 0
+25.89189167%: Won by 1
+24.38498758%: Won by 2
+Termination probability: 0.7684489343
+1.20user 0.00system 0:01.21elapsed 99%CPU (0avgtext+0avgdata 28328maxresident)k
+0inputs+8outputs (0major+1876minor)pagefaults 0swaps

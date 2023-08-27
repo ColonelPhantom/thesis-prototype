@@ -1,0 +1,48 @@
+Storm 1.8.0
+
+Date: Thu Aug 24 00:15:06 2023
+Command line arguments: --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F "win0" ]' --timemem -e sparse -v
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 4.304s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1402622
+Transitions: 	8131029
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 11858 item(s)
+   * init -> 1 item(s)
+   * win0 -> 5929 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "win0"] ...
+ INFO (SparseDtmcPrctlHelper.cpp:185): Preprocessing: 5929 states with probability 1, 11858 with probability 0 (1384835 states remaining).
+ INFO (TopologicalLinearEquationSolver.cpp:74): SCC decomposition computed in 0.259s. Found 15244 SCC(s) containing a total of 1384835 states. Average SCC size is 90.8446.
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (3 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 2 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (228 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 17 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (228 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 17 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (17328 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 24 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (228 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 18 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (17328 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 23 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (17328 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 22 iteration(s).
+ INFO (GmmxxLinearEquationSolver.cpp:56): Solving linear equation system (1316928 rows) with Gmmxx linear equation solver with method 'GMRES' and preconditioner 'ilu'.
+ INFO (GmmxxLinearEquationSolver.cpp:120): Iterative solver converged after 21 iteration(s).
+Result (for initial states): 0.3429883178
+Time for model checking: 1.798s.
+
+Performance statistics:
+  * peak memory usage: 1518MB
+  * CPU time: 5.969s
+  * wallclock time: 6.108s

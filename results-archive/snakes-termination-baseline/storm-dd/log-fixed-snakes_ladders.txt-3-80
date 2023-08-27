@@ -1,0 +1,40 @@
+Storm 1.8.0
+
+Date: Wed Aug 23 19:29:27 2023
+Command line arguments: --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F<=80 finished ]' --timemem -e dd -v
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.003s.
+
+ INFO (DdPrismModelBuilder.cpp:1475): Fixing deadlocks in 17787 states. The first three of these states are: 
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=6, p1=6, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=7, p1=6, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=6, p1=7, p2=100, pl=0]
+
+Time for model construction: 0.543s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	1402622 (825 nodes)
+Transitions: 	8131029 (9097 nodes)
+Reward Models:  none
+Variables: 	rows: 4 meta variables (23 DD variables), columns: 4 meta variables (23 DD variables)
+Labels: 	5
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (24 nodes)
+   * win0
+   * win1
+   * win2
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=80 (((p0 = 100) | (p1 = 100)) | (p2 = 100))] ...
+ INFO (SymbolicLinearEquationSolver.cpp:152): The selected equation solver is not available in the dd engine. Falling back to Native solver.
+Result (for initial states): 0.7684477526
+Time for model checking: 136.725s.
+
+Performance statistics:
+  * peak memory usage: 3884MB
+  * CPU time: 2025.941s
+  * wallclock time: 137.412s

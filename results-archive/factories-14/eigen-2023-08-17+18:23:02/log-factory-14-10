@@ -1,0 +1,6 @@
+..........Done after 8531.485352ms
+Final probabilities:
+0.0003517701293%: 16383
+Termination probability: 3.517701293e-06
+8.52user 0.00system 0:08.53elapsed 99%CPU (0avgtext+0avgdata 3768maxresident)k
+0inputs+16outputs (0major+281minor)pagefaults 0swaps

@@ -1,0 +1,41 @@
+Storm 1.8.0
+
+Date: Sun Aug 27 20:02:42 2023
+Command line arguments: --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F<=20 finished ]' --timemem -e hybrid -v
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.003s.
+
+ INFO (DdPrismModelBuilder.cpp:1475): Fixing deadlocks in 17787 states. The first three of these states are: 
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=6, p1=6, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=7, p1=6, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=6, p1=7, p2=100, pl=0]
+
+Time for model construction: 0.553s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	1402622 (825 nodes)
+Transitions: 	8131029 (9097 nodes)
+Reward Models:  none
+Variables: 	rows: 4 meta variables (23 DD variables), columns: 4 meta variables (23 DD variables)
+Labels: 	5
+   * deadlock -> 0 state(s) (1 nodes)
+   * init -> 1 state(s) (24 nodes)
+   * win0
+   * win1
+   * win2
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=20 (((p0 = 100) | (p1 = 100)) | (p2 = 100))] ...
+ INFO (HybridDtmcPrctlHelper.cpp:154): Preprocessing: 1402622 states with probability greater 0.
+ INFO (HybridDtmcPrctlHelper.cpp:188): Converting symbolic matrix/vector to explicit representation done in 3053ms.
+Result (for initial states): 0.00301983604
+Time for model checking: 3.315s.
+
+Performance statistics:
+  * peak memory usage: 2940MB
+  * CPU time: 61.269s
+  * wallclock time: 3.986s

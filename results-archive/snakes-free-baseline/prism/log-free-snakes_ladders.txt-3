@@ -1,0 +1,70 @@
+PRISM
+=====
+
+Version: 4.8
+Date: Thu Aug 24 02:17:11 CEST 2023
+Hostname: polonium
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism tmp/snakes_ladders.txt-3.prism -pf 'P=? [ F "win0" ]' -gs
+
+Parsing model file "tmp/snakes_ladders.txt-3.prism"...
+
+Type:        DTMC
+Modules:     player0 player1 player2 gamemaster
+Variables:   p0 p1 p2 pl
+
+1 property:
+(1) P=? [ F "win0" ]
+
+---------------------------------------------------------------------
+
+Model checking: P=? [ F "win0" ]
+
+Building model...
+
+Computing reachable states...
+
+Reachability (BFS): 24 iterations in 0.01 seconds (average 0.000417, setup 0.00)
+
+Time for model construction: 0.053 seconds.
+
+Warning: Deadlocks detected and fixed in 17787 states
+
+Type:        DTMC
+States:      1402622 (1 initial)
+Transitions: 8131029
+
+Transition matrix: 7229 nodes (6 terminal), 8131029 minterms, vars: 23r/23c
+
+Prob0: 22 iterations in 0.00 seconds (average 0.000182, setup 0.00)
+
+Prob1: 21 iterations in 0.01 seconds (average 0.000571, setup 0.00)
+
+yes = 5929, no = 11858, maybe = 1384835
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=23, nodes=18085] [847.7 KB]
+Splitting into blocks... [levels=9, n=319, nnz=2683, compact] [12.0 KB]
+Adding explicit sparse matrices... [levels=10, num=826, compact] [3.6 MB]
+Creating vector for diagonals... [dist=1, compact] [2.7 MB]
+Creating vector for RHS... [dist=2, compact] [2.7 MB]
+Allocating iteration vectors... [10.7 MB + 47.8 KB = 10.7 MB]
+TOTAL: [20.5 MB]
+
+Starting iterations...
+Iteration 244: max relative diff=0.000004, 5.00 sec so far
+
+Gauss-Seidel: 271 iterations in 5.64 seconds (average 0.020513, setup 0.08)
+
+Value in the initial state: 0.3429824380450652
+
+Time for model checking: 5.672 seconds.
+
+Result: 0.3429824380450652 (+/- 3.3150302102342738E-6 estimated; rel err 9.665305982222639E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+

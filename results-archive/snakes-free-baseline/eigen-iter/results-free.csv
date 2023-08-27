@@ -1,0 +1,3 @@
+command,mean,stddev,median,user,system,min,max,parameter_p,parameter_t
+timeout 30m /bin/time tmp/solver-3 snakes-iter 100 snakes_ladders.txt &> results/eigen-2023-08-27+23:18:23/log-free-snakes_ladders.txt-3,6.2815786794466675,0.01970065525228923,6.2774704767800005,6.269897426666666,0.0028613733333333335,6.264256046780001,6.30300951478,3,snakes_ladders.txt
+timeout 30m /bin/time tmp/solver-3 snakes-iter 100 snakes_snakes.txt &> results/eigen-2023-08-27+23:18:23/log-free-snakes_snakes.txt-3,320.65195605611336,0.19434331518996248,320.66008332878,320.07243776,0.08075839333333333,320.45367659978,320.84210823978003,3,snakes_snakes.txt

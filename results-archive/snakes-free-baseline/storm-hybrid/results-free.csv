@@ -1,0 +1,3 @@
+command,mean,stddev,median,user,system,min,max,parameter_p,parameter_t
+"timeout 30m /bin/time storm --prism /data/tmp/snakes_ladders.txt-3.prism --prop 'P=? [ F ""win0"" ]' --timemem -e hybrid -v > /data/results/storm-2023-08-23+22:25:48/log-free-snakes_ladders.txt-3",5.340390309506667,0.050858948373096936,5.34009849784,82.71485761333334,2.02131258,5.28967789484,5.39139453584,3,snakes_ladders.txt
+"timeout 30m /bin/time storm --prism /data/tmp/snakes_snakes.txt-3.prism --prop 'P=? [ F ""win0"" ]' --timemem -e hybrid -v > /data/results/storm-2023-08-23+22:25:48/log-free-snakes_snakes.txt-3",6.646276658173334,0.0057732424796514085,6.64841087184,103.49790694666666,2.073191913333333,6.63974016584,6.65067893684,3,snakes_snakes.txt

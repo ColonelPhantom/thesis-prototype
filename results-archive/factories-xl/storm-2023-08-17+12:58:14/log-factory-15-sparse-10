@@ -1,0 +1,87 @@
+Storm 1.8.0
+
+Date: Thu Aug 17 13:03:54 2023
+Command line arguments: --prism /data/tmp/factories-15.prism --prop 'P=? [ F <= 10 allStrike]' --timemem -v -e sparse
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.002s.
+
+Explored 505 states in 5 seconds (currently 101 states per second).
+Explored 1020 states in 10 seconds (currently 103 states per second).
+Explored 1531 states in 15 seconds (currently 102 states per second).
+Explored 2049 states in 20 seconds (currently 103 states per second).
+Explored 2565 states in 25 seconds (currently 103 states per second).
+Explored 3078 states in 30 seconds (currently 102 states per second).
+Explored 3592 states in 35 seconds (currently 102 states per second).
+Explored 4097 states in 40 seconds (currently 101 states per second).
+Explored 4613 states in 45 seconds (currently 103 states per second).
+Explored 5128 states in 50 seconds (currently 103 states per second).
+Explored 5641 states in 55 seconds (currently 102 states per second).
+Explored 6156 states in 60 seconds (currently 103 states per second).
+Explored 6671 states in 65 seconds (currently 103 states per second).
+Explored 7187 states in 70 seconds (currently 103 states per second).
+Explored 7702 states in 75 seconds (currently 103 states per second).
+Explored 8193 states in 80 seconds (currently 98 states per second).
+Explored 8710 states in 85 seconds (currently 103 states per second).
+Explored 9222 states in 90 seconds (currently 102 states per second).
+Explored 9734 states in 95 seconds (currently 102 states per second).
+Explored 10246 states in 100 seconds (currently 102 states per second).
+Explored 10758 states in 105 seconds (currently 102 states per second).
+Explored 11272 states in 110 seconds (currently 102 states per second).
+Explored 11785 states in 115 seconds (currently 102 states per second).
+Explored 12298 states in 120 seconds (currently 102 states per second).
+Explored 12814 states in 125 seconds (currently 103 states per second).
+Explored 13330 states in 130 seconds (currently 103 states per second).
+Explored 13846 states in 135 seconds (currently 103 states per second).
+Explored 14361 states in 140 seconds (currently 103 states per second).
+Explored 14876 states in 145 seconds (currently 103 states per second).
+Explored 15389 states in 150 seconds (currently 102 states per second).
+Explored 15906 states in 155 seconds (currently 103 states per second).
+Explored 16385 states in 161 seconds (currently 95 states per second).
+Explored 16904 states in 166 seconds (currently 103 states per second).
+Explored 17422 states in 171 seconds (currently 103 states per second).
+Explored 17937 states in 176 seconds (currently 103 states per second).
+Explored 18453 states in 181 seconds (currently 103 states per second).
+Explored 18968 states in 186 seconds (currently 103 states per second).
+Explored 19482 states in 191 seconds (currently 102 states per second).
+Explored 19997 states in 196 seconds (currently 103 states per second).
+Explored 20508 states in 201 seconds (currently 102 states per second).
+Explored 21019 states in 206 seconds (currently 102 states per second).
+Explored 21534 states in 211 seconds (currently 103 states per second).
+Explored 22050 states in 216 seconds (currently 103 states per second).
+Explored 22566 states in 221 seconds (currently 103 states per second).
+Explored 23081 states in 226 seconds (currently 103 states per second).
+Explored 23594 states in 231 seconds (currently 102 states per second).
+Explored 24108 states in 236 seconds (currently 102 states per second).
+Explored 24612 states in 241 seconds (currently 100 states per second).
+Explored 25129 states in 246 seconds (currently 103 states per second).
+Explored 25642 states in 251 seconds (currently 102 states per second).
+Explored 26153 states in 256 seconds (currently 102 states per second).
+Explored 26668 states in 261 seconds (currently 103 states per second).
+Explored 27183 states in 266 seconds (currently 103 states per second).
+Explored 27699 states in 271 seconds (currently 103 states per second).
+Explored 28215 states in 276 seconds (currently 103 states per second).
+Explored 28733 states in 281 seconds (currently 103 states per second).
+Explored 29249 states in 286 seconds (currently 103 states per second).
+Explored 29764 states in 291 seconds (currently 103 states per second).
+Explored 30279 states in 296 seconds (currently 103 states per second).
+Explored 30790 states in 301 seconds (currently 102 states per second).
+Explored 31304 states in 306 seconds (currently 102 states per second).
+Explored 31823 states in 311 seconds (currently 103 states per second).
+Explored 32342 states in 316 seconds (currently 103 states per second).
+Time for model construction: 321.034s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	32768
+Transitions: 	1073709057
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12) & c13) & c14) & c15) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=10 ((((((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12) & c13) & c14) & c15)] ...
+ INFO (SparseDeterministicStepBoundedHorizonHelper.cpp:51): Preprocessing: 32767 non-target states with probability greater 0.

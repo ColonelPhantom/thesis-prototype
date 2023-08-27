@@ -1,0 +1,58 @@
+PRISM
+=====
+
+Version: 4.8
+Date: Thu Aug 17 13:15:59 CEST 2023
+Hostname: polonium
+Memory limits: cudd=4g, java(heap)=1g
+Command line: prism tmp/factories-12.prism -pf 'P=? [ F <= 10 allStrike]' -sparse -cuddmaxmem 4g -cuddmaxmem 4g
+
+Parsing model file "tmp/factories-12.prism"...
+
+Type:        DTMC
+Modules:     F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12
+Variables:   c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12
+
+1 property:
+(1) P=? [ F<=10 allStrike ]
+
+---------------------------------------------------------------------
+
+Model checking: P=? [ F<=10 allStrike ]
+
+Building model...
+
+Computing reachable states...
+
+Reachability (BFS): 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+Time for model construction: 44.673 seconds.
+
+Type:        DTMC
+States:      4096 (1 initial)
+Transitions: 16777216
+
+Transition matrix: 33550629 nodes (16773483 terminal), 16777216 minterms, vars: 12r/12c
+
+Prob0: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 4095
+
+Computing probabilities...
+Engine: Sparse
+
+Building sparse matrix... [n=4096, nnz=16773120] [192.0 MB]
+Creating vector for yes... [dist=2, compact] [8.0 KB]
+Allocating iteration vectors... [2 x 32.0 KB]
+TOTAL: [192.0 MB]
+
+Starting iterations...
+
+Iterative method: 10 iterations in 1.05 seconds (average 0.011500, setup 0.94)
+
+Value in the initial state: 3.8216492248358416E-5
+
+Time for model checking: 1.078 seconds.
+
+Result: 3.8216492248358416E-5 (exact floating point)
+

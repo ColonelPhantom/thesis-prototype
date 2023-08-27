@@ -1,0 +1,46 @@
+Storm 1.8.0
+
+Date: Thu Aug 17 16:56:38 2023
+Command line arguments: --prism /data/tmp/factories-14.prism --prop 'P=? [ F <= 10 allStrike]' --timemem -v -e sparse
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.002s.
+
+Explored 1030 states in 5 seconds (currently 206 states per second).
+Explored 2088 states in 10 seconds (currently 211 states per second).
+Explored 3165 states in 15 seconds (currently 215 states per second).
+Explored 4213 states in 20 seconds (currently 209 states per second).
+Explored 5285 states in 25 seconds (currently 214 states per second).
+Explored 6352 states in 30 seconds (currently 213 states per second).
+Explored 7425 states in 35 seconds (currently 214 states per second).
+Explored 8450 states in 40 seconds (currently 205 states per second).
+Explored 9530 states in 45 seconds (currently 216 states per second).
+Explored 10600 states in 50 seconds (currently 214 states per second).
+Explored 11674 states in 55 seconds (currently 214 states per second).
+Explored 12748 states in 60 seconds (currently 214 states per second).
+Explored 13825 states in 65 seconds (currently 215 states per second).
+Explored 14905 states in 70 seconds (currently 216 states per second).
+Explored 15986 states in 75 seconds (currently 216 states per second).
+Time for model construction: 77.009s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	16384
+Transitions: 	268419073
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12) & c13) & c14) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=10 (((((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12) & c13) & c14)] ...
+ INFO (SparseDeterministicStepBoundedHorizonHelper.cpp:51): Preprocessing: 16383 non-target states with probability greater 0.
+Result (for initial states): 1.104114841e-06
+Time for model checking: 9.607s.
+
+Performance statistics:
+  * peak memory usage: 15404MB
+  * CPU time: 85.086s
+  * wallclock time: 86.630s

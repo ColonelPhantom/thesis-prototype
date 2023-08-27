@@ -1,0 +1,105 @@
+PRISM
+=====
+
+Version: 4.8
+Date: Sun Aug 27 21:34:41 CEST 2023
+Hostname: polonium
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism tmp/snakes_ladders.txt-4.prism -pf 'P=? [ F<=80 finished ]' -gs
+
+Parsing model file "tmp/snakes_ladders.txt-4.prism"...
+
+Type:        DTMC
+Modules:     player0 player1 player2 player3 gamemaster
+Variables:   p0 p1 p2 p3 pl
+
+1 property:
+(1) P=? [ F<=80 finished ]
+
+---------------------------------------------------------------------
+
+Model checking: P=? [ F<=80 finished ]
+
+Building model...
+
+Computing reachable states...
+
+Reachability (BFS): 32 iterations in 0.04 seconds (average 0.001094, setup 0.00)
+
+Time for model construction: 0.106 seconds.
+
+Warning: Deadlocks detected and fixed in 1826132 states
+
+Type:        DTMC
+States:      143258542 (1 initial)
+Transitions: 830324889
+
+Transition matrix: 24983 nodes (6 terminal), 830324889 minterms, vars: 30r/30c
+
+Prob0: 26 iterations in 0.06 seconds (average 0.002192, setup 0.00)
+
+yes = 1826132, no = 0, maybe = 141432410
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=30, nodes=74334] [3.4 MB]
+Adding explicit sparse matrices... [levels=9, num=1139, compact] [778.0 KB]
+Creating vector for yes... [dist=2, compact] [273.2 MB]
+Allocating iteration vectors... [2 x 1.1 GB]
+TOTAL: [2.4 GB]
+
+Starting iterations...
+Iteration 1 (of 80): 5.22 sec so far
+Iteration 3 (of 80): 10.45 sec so far
+Iteration 5 (of 80): 15.67 sec so far
+Iteration 7 (of 80): 20.89 sec so far
+Iteration 9 (of 80): 26.12 sec so far
+Iteration 11 (of 80): 31.34 sec so far
+Iteration 13 (of 80): 36.56 sec so far
+Iteration 15 (of 80): 41.79 sec so far
+Iteration 17 (of 80): 47.01 sec so far
+Iteration 19 (of 80): 52.23 sec so far
+Iteration 21 (of 80): 57.45 sec so far
+Iteration 23 (of 80): 62.68 sec so far
+Iteration 25 (of 80): 67.91 sec so far
+Iteration 27 (of 80): 73.12 sec so far
+Iteration 29 (of 80): 78.35 sec so far
+Iteration 31 (of 80): 83.57 sec so far
+Iteration 33 (of 80): 88.79 sec so far
+Iteration 35 (of 80): 94.02 sec so far
+Iteration 37 (of 80): 99.24 sec so far
+Iteration 39 (of 80): 104.46 sec so far
+Iteration 41 (of 80): 109.68 sec so far
+Iteration 43 (of 80): 114.91 sec so far
+Iteration 45 (of 80): 120.13 sec so far
+Iteration 47 (of 80): 125.35 sec so far
+Iteration 49 (of 80): 130.56 sec so far
+Iteration 51 (of 80): 135.79 sec so far
+Iteration 53 (of 80): 141.01 sec so far
+Iteration 55 (of 80): 146.24 sec so far
+Iteration 57 (of 80): 151.46 sec so far
+Iteration 59 (of 80): 156.68 sec so far
+Iteration 61 (of 80): 161.90 sec so far
+Iteration 63 (of 80): 167.13 sec so far
+Iteration 65 (of 80): 172.35 sec so far
+Iteration 67 (of 80): 177.57 sec so far
+Iteration 69 (of 80): 182.79 sec so far
+Iteration 71 (of 80): 188.01 sec so far
+Iteration 73 (of 80): 193.24 sec so far
+Iteration 75 (of 80): 198.46 sec so far
+Iteration 77 (of 80): 203.68 sec so far
+Iteration 79 (of 80): 208.90 sec so far
+
+Iterative method: 80 iterations in 210.10 seconds (average 2.611300, setup 1.20)
+
+Value in the initial state: 0.6362371661534886
+
+Time for model checking: 210.577 seconds.
+
+Result: 0.6362371661534886 (exact floating point)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+

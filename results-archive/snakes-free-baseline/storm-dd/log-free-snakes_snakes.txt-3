@@ -1,0 +1,36 @@
+Storm 1.8.0
+
+Date: Wed Aug 23 22:56:54 2023
+Command line arguments: --prism /data/tmp/snakes_snakes.txt-3.prism --prop 'P=? [ F "win0" ]' --timemem -e dd -v
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.003s.
+
+ INFO (DdPrismModelBuilder.cpp:1475): Fixing deadlocks in 19200 states. The first three of these states are: 
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=1, p1=1, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=1, p1=2, p2=100, pl=0]
+
+ INFO (DdPrismModelBuilder.cpp:1480): [p0=1, p1=3, p2=100, pl=0]
+
+Time for model construction: 0.548s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	1555243 (243 nodes)
+Transitions: 	9081858 (4937 nodes)
+Reward Models:  none
+Variables: 	rows: 4 meta variables (23 DD variables), columns: 4 meta variables (23 DD variables)
+Labels: 	5
+   * deadlock -> 12800 state(s) (109 nodes)
+   * init -> 1 state(s) (24 nodes)
+   * win0
+   * win1
+   * win2
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "win0"] ...
+ INFO (SymbolicDtmcPrctlHelper.cpp:33): Preprocessing: 12800 states with probability 0, 6400 with probability 1 (1536043 states remaining).
+ INFO (SymbolicLinearEquationSolver.cpp:152): The selected equation solver is not available in the dd engine. Falling back to Native solver.
+ INFO (SymbolicLinearEquationSolver.cpp:152): The selected equation solver is not available in the dd engine. Falling back to Native solver.
+ INFO (SymbolicNativeLinearEquationSolver.cpp:94): Solving symbolic linear equation system with NativeLinearEquationSolver (jacobi)

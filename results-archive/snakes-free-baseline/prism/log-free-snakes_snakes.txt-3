@@ -1,0 +1,108 @@
+PRISM
+=====
+
+Version: 4.8
+Date: Thu Aug 24 02:24:08 CEST 2023
+Hostname: polonium
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism tmp/snakes_snakes.txt-3.prism -pf 'P=? [ F "win0" ]' -gs
+
+Parsing model file "tmp/snakes_snakes.txt-3.prism"...
+
+Type:        DTMC
+Modules:     player0 player1 player2 gamemaster
+Variables:   p0 p1 p2 pl
+
+1 property:
+(1) P=? [ F "win0" ]
+
+---------------------------------------------------------------------
+
+Model checking: P=? [ F "win0" ]
+
+Building model...
+
+Computing reachable states...
+
+Reachability (BFS): 55 iterations in 0.01 seconds (average 0.000236, setup 0.00)
+
+Time for model construction: 0.05 seconds.
+
+Warning: Deadlocks detected and fixed in 19200 states
+
+Type:        DTMC
+States:      1555243 (1 initial)
+Transitions: 9081858
+
+Transition matrix: 3872 nodes (5 terminal), 9081858 minterms, vars: 23r/23c
+
+Prob0: 55 iterations in 0.01 seconds (average 0.000091, setup 0.00)
+
+Prob1: 54 iterations in 0.01 seconds (average 0.000204, setup 0.00)
+
+yes = 6400, no = 12800, maybe = 1536043
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=23, nodes=4812] [225.6 KB]
+Splitting into blocks... [levels=9, n=325, nnz=2758, compact] [12.4 KB]
+Adding explicit sparse matrices... [levels=11, num=165, compact] [1.9 MB]
+Creating vector for diagonals... [dist=1, compact] [3.0 MB]
+Creating vector for RHS... [dist=2, compact] [3.0 MB]
+Allocating iteration vectors... [11.9 MB + 52.8 KB = 11.9 MB]
+TOTAL: [19.9 MB]
+
+Starting iterations...
+Iteration 223: max relative diff=0.006661, 5.02 sec so far
+Iteration 446: max relative diff=0.002379, 10.04 sec so far
+Iteration 669: max relative diff=0.001352, 15.06 sec so far
+Iteration 892: max relative diff=0.000895, 20.09 sec so far
+Iteration 1115: max relative diff=0.000640, 25.11 sec so far
+Iteration 1338: max relative diff=0.000478, 30.13 sec so far
+Iteration 1561: max relative diff=0.000368, 35.15 sec so far
+Iteration 1784: max relative diff=0.000290, 40.17 sec so far
+Iteration 2007: max relative diff=0.000231, 45.19 sec so far
+Iteration 2230: max relative diff=0.000187, 50.22 sec so far
+Iteration 2453: max relative diff=0.000152, 55.23 sec so far
+Iteration 2676: max relative diff=0.000125, 60.26 sec so far
+Iteration 2899: max relative diff=0.000103, 65.28 sec so far
+Iteration 3122: max relative diff=0.000085, 70.30 sec so far
+Iteration 3345: max relative diff=0.000071, 75.32 sec so far
+Iteration 3568: max relative diff=0.000059, 80.34 sec so far
+Iteration 3791: max relative diff=0.000049, 85.36 sec so far
+Iteration 4014: max relative diff=0.000041, 90.38 sec so far
+Iteration 4237: max relative diff=0.000035, 95.40 sec so far
+Iteration 4460: max relative diff=0.000029, 100.42 sec so far
+Iteration 4683: max relative diff=0.000025, 105.44 sec so far
+Iteration 4906: max relative diff=0.000021, 110.46 sec so far
+Iteration 5129: max relative diff=0.000017, 115.48 sec so far
+Iteration 5352: max relative diff=0.000015, 120.50 sec so far
+Iteration 5575: max relative diff=0.000012, 125.52 sec so far
+Iteration 5798: max relative diff=0.000010, 130.54 sec so far
+Iteration 6021: max relative diff=0.000009, 135.56 sec so far
+Iteration 6244: max relative diff=0.000007, 140.59 sec so far
+Iteration 6467: max relative diff=0.000006, 145.61 sec so far
+Iteration 6690: max relative diff=0.000005, 150.62 sec so far
+Iteration 6913: max relative diff=0.000004, 155.65 sec so far
+Iteration 7136: max relative diff=0.000004, 160.67 sec so far
+Iteration 7359: max relative diff=0.000003, 165.69 sec so far
+Iteration 7582: max relative diff=0.000003, 170.71 sec so far
+Iteration 7805: max relative diff=0.000002, 175.73 sec so far
+Iteration 8028: max relative diff=0.000002, 180.75 sec so far
+Iteration 8251: max relative diff=0.000002, 185.77 sec so far
+Iteration 8474: max relative diff=0.000001, 190.79 sec so far
+Iteration 8697: max relative diff=0.000001, 195.81 sec so far
+
+Gauss-Seidel: 8905 iterations in 200.52 seconds (average 0.022515, setup 0.03)
+
+Value in the initial state: 0.333097437044616
+
+Time for model checking: 200.716 seconds.
+
+Result: 0.333097437044616 (+/- 3.3302449433564975E-6 estimated; rel err 9.997810169012004E-6)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+

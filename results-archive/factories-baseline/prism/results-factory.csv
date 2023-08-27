@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max,parameter_f,parameter_h
+timeout 15m prism tmp/factories-12.prism -pf 'P=? [ F <= 10 allStrike]' -sparse -cuddmaxmem 4g > results/prism-2023-08-17+13:14:19/log-factory-12-10--sparse -cuddmaxmem 4g,49.89133441701333,0.16630943501850354,49.84078759268,49.58734189333333,0.8971794000000001,49.75616284768,50.07705281068,12,10

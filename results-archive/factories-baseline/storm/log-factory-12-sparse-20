@@ -1,0 +1,30 @@
+Storm 1.8.0
+
+Date: Thu Aug 17 10:57:39 2023
+Command line arguments: --prism /data/tmp/factories-12.prism --prop 'P=? [ F <= 20 allStrike]' --timemem -e sparse
+Current working directory: /opt/storm/build/bin
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 4.539s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4096
+Transitions: 	16773121
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [true U<=20 (((((((((((c1 & c2) & c3) & c4) & c5) & c6) & c7) & c8) & c9) & c10) & c11) & c12)] ...
+Result (for initial states): 7.638408465e-05
+Time for model checking: 0.719s.
+
+Performance statistics:
+  * peak memory usage: 1020MB
+  * CPU time: 5.151s
+  * wallclock time: 5.261s

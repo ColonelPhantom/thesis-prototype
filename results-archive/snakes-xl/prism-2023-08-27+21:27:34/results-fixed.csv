@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max,parameter_h,parameter_p,parameter_t
+timeout 30m /bin/time -o results/prism-2023-08-27+21:27:34/time-fixed-snakes_ladders.txt-4-80 prism tmp/snakes_ladders.txt-4.prism -pf 'P=? [ F<=80 finished ]' -gs > results/prism-2023-08-27+21:27:34/log-fixed-snakes_ladders.txt-4-80,212.57748100761333,1.287291315796137,213.11638409428002,212.66951285333334,0.43385414,211.10831844528002,213.50774048328,80,4,snakes_ladders.txt
